@@ -11,7 +11,8 @@ import SwiftUI
 struct LittleWinnerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            GameListView(games: .all)
         }
     }
 }

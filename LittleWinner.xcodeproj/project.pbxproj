@@ -14,6 +14,9 @@
 		9105F0D4293B211900810472 /* LittleWinnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9105F0D3293B211900810472 /* LittleWinnerTests.swift */; };
 		9105F0EE293B22B700810472 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9105F0ED293B22B700810472 /* README.md */; };
 		9105F0F2293B24DB00810472 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 9105F0F1293B24DB00810472 /* Swinject */; };
+		9105F0F4293B279D00810472 /* GameInfoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9105F0F3293B279D00810472 /* GameInfoRowView.swift */; };
+		9105F0F7293B2F7500810472 /* GameListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9105F0F6293B2F7500810472 /* GameListView.swift */; };
+		9105F0FB293B2FA700810472 /* LittleWinnerModel in Frameworks */ = {isa = PBXBuildFile; productRef = 9105F0FA293B2FA700810472 /* LittleWinnerModel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,10 @@
 		9105F0CF293B211900810472 /* LittleWinnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LittleWinnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9105F0D3293B211900810472 /* LittleWinnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleWinnerTests.swift; sourceTree = "<group>"; };
 		9105F0ED293B22B700810472 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9105F0F3293B279D00810472 /* GameInfoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInfoRowView.swift; sourceTree = "<group>"; };
+		9105F0F5293B2D6900810472 /* LittleWinnerModel */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LittleWinnerModel; sourceTree = "<group>"; };
+		9105F0F6293B2F7500810472 /* GameListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListView.swift; sourceTree = "<group>"; };
+		9105F0F8293B2FA100810472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +50,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9105F0F2293B24DB00810472 /* Swinject in Frameworks */,
+				9105F0FB293B2FA700810472 /* LittleWinnerModel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +72,7 @@
 				9105F0D2293B211900810472 /* LittleWinnerTests */,
 				9105F0EF293B248800810472 /* Packages */,
 				9105F0C0293B211500810472 /* Products */,
+				9105F0F9293B2FA700810472 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,10 +88,13 @@
 		9105F0C1293B211500810472 /* LittleWinner */ = {
 			isa = PBXGroup;
 			children = (
+				9105F0F8293B2FA100810472 /* Info.plist */,
 				9105F0C2293B211500810472 /* LittleWinnerApp.swift */,
 				9105F0C4293B211500810472 /* ContentView.swift */,
 				9105F0C6293B211900810472 /* Assets.xcassets */,
 				9105F0C8293B211900810472 /* Preview Content */,
+				9105F0F3293B279D00810472 /* GameInfoRowView.swift */,
+				9105F0F6293B2F7500810472 /* GameListView.swift */,
 			);
 			path = LittleWinner;
 			sourceTree = "<group>";
@@ -106,8 +118,16 @@
 		9105F0EF293B248800810472 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				9105F0F5293B2D6900810472 /* LittleWinnerModel */,
 			);
 			path = Packages;
+			sourceTree = "<group>";
+		};
+		9105F0F9293B2FA700810472 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +149,7 @@
 			name = LittleWinner;
 			packageProductDependencies = (
 				9105F0F1293B24DB00810472 /* Swinject */,
+				9105F0FA293B2FA700810472 /* LittleWinnerModel */,
 			);
 			productName = LittleWinner;
 			productReference = 9105F0BF293B211500810472 /* LittleWinner.app */;
@@ -238,7 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9105F0F4293B279D00810472 /* GameInfoRowView.swift in Sources */,
 				9105F0C5293B211500810472 /* ContentView.swift in Sources */,
+				9105F0F7293B2F7500810472 /* GameListView.swift in Sources */,
 				9105F0C3293B211500810472 /* LittleWinnerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +410,7 @@
 				DEVELOPMENT_TEAM = D4C9KWS6HU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LittleWinner/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -417,6 +441,7 @@
 				DEVELOPMENT_TEAM = D4C9KWS6HU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LittleWinner/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -524,6 +549,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9105F0F0293B24DB00810472 /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
+		};
+		9105F0FA293B2FA700810472 /* LittleWinnerModel */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LittleWinnerModel;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
