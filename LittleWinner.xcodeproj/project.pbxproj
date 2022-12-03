@@ -60,6 +60,7 @@
 				9105F0ED293B22B700810472 /* README.md */,
 				9105F0C1293B211500810472 /* LittleWinner */,
 				9105F0D2293B211900810472 /* LittleWinnerTests */,
+				9105F0EF293B248800810472 /* Packages */,
 				9105F0C0293B211500810472 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +99,13 @@
 				9105F0D3293B211900810472 /* LittleWinnerTests.swift */,
 			);
 			path = LittleWinnerTests;
+			sourceTree = "<group>";
+		};
+		9105F0EF293B248800810472 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
