@@ -13,6 +13,7 @@
 		9105F0CA293B211900810472 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9105F0C9293B211900810472 /* Preview Assets.xcassets */; };
 		9105F0D4293B211900810472 /* LittleWinnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9105F0D3293B211900810472 /* LittleWinnerTests.swift */; };
 		9105F0EE293B22B700810472 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9105F0ED293B22B700810472 /* README.md */; };
+		9105F0F2293B24DB00810472 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 9105F0F1293B24DB00810472 /* Swinject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9105F0F2293B24DB00810472 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +127,9 @@
 			dependencies = (
 			);
 			name = LittleWinner;
+			packageProductDependencies = (
+				9105F0F1293B24DB00810472 /* Swinject */,
+			);
 			productName = LittleWinner;
 			productReference = 9105F0BF293B211500810472 /* LittleWinner.app */;
 			productType = "com.apple.product-type.application";
@@ -174,6 +179,9 @@
 				Base,
 			);
 			mainGroup = 9105F0B6293B211500810472;
+			packageReferences = (
+				9105F0F0293B24DB00810472 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = 9105F0C0293B211500810472 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -499,6 +507,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9105F0F0293B24DB00810472 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9105F0F1293B24DB00810472 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9105F0F0293B24DB00810472 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9105F0B7293B211500810472 /* Project object */;
 }
